@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="./outside/css/reset.css">
+    <link rel="stylesheet" href="./outside/icomoon/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="mid">
+            <div class="login-header">
+                <a href="./index.html">
+                    <img src="http://www.gjw.com/Images/logo1.jpg" alt="">
+                </a>
+                <div class="header-right">
+                    <span>您好,欢迎光临购酒网！</span>
+                    <em><i class="icon-cog"></i>帮助</em>
+                    <b><i class="icon-user"></i>在线客服</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录区 -->
+    <div class="login-cont">
+        <div class="mid">
+            <div class="login-box">
+                <div class="img-box">
+                    <img src="http://img0.gjw.com/Famous/2019/0926/f42ba1b4477b41c5aebcdbb943060fad.jpg" alt="">
+                </div>
+                <div class="form">
+                    <h2><i class="icon-home3"></i>购酒网会员登录</h2>
+                    <div class="text">
+                        <i class="icon-user"></i>
+                        <input type="text" placeholder="请输入您的用户名" id="user1">
+                    </div>
+                    <div class="pass">
+                        <i class="icon-power"></i>
+                        <input type="password" placeholder="请输入密码" id="pass">
+                    </div>
+                    <div class="autoLogin">
+                        <input type="checkbox" id="autoLogin" name="autoLogin">自动登录
+                    </div>
+                    <button id="loginBtn">登录</button>
+                    <div class="dashed"></div>
+                    <div class="qita">
+                        <h3>使用其它账号登录</h3>
+                        <img src="http://order.gjw.com/Order/v1/css/login/images/qq.png" alt="">
+                        <img src="http://order.gjw.com/Order/v1/css/login/images/zfb.png" alt="">
+                        <img src="http://order.gjw.com/Order/v1/css/login/images/ico38.png" alt="">
+                    </div>
+                    <div class="zhuce"><a href="./register.html">注册新用户</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="loginFooter">
+        <div class="mid">
+            <div class="footerCont">
+                <p>
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">友情链接</a>
+                    <a href="">隐私声明</a> 
+                </p>
+                <div class="copyRight">    
+                Copyright©2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./outside/js/jquery.js"></script>
+<script src="./outside/js/cookie.js"></script>
+<script>
+	class Login{
+		constructor() {
+		    this.name = document.getElementById('user1');
+		    this.pass = document.getElementById('pass');
+		    this.autoLogin = document.getElementById('autoLogin');
+		    this.loginBtn = document.getElementById('loginBtn');
+		    this.addEvent();
+		}
+		addEvent(){
+			this.userMsg = JSON.parse(getCookie("userMsg"));
+			this.len = this.userMsg.length -1;
+			this.autoLogin.onclick = () => {
+				if(this.autoLogin.checked == true){
+					this.name.value = this.userMsg[this.len].username;
+					this.pass.value = this.userMsg[this.len].password;
+				}else{
+					this.name.value ="";
+					this.pass.value = "";
+				}
+			}
+			this.loginBtn.onclick= () => {
+				for(let i=0;i<this.len + 1;i++){
+					if(this.name.value === this.userMsg[i].username && this.pass.value === this.userMsg[i].password){
+						var t = JSON.parse(getCookie("userMsg"));
+						// console.log(t)
+						var t1 = t[i]["username"]
+						// console.log(t1)
+						setCookie('MY',1);
+						setCookie('login',t[i]["username"]);
+						alert('登陆成功');
+						open('./index.html','_self');
+					}else if(this.name.value != this.userMsg[i].username ){
+                        alert('请输入正确的用户名');
+                    }else if( this.pass.value != this.userMsg[i].password){
+                        alert('密码错误');
+                    }
+				}
+			}
+		}
+	}
+	new Login();
+
+</script>
+</html>

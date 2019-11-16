@@ -1,0 +1,1300 @@
+/* 预定义样式 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 顶部 */
+.topNav {
+    width: 100%;
+    height: 31px;
+    background: #3E3A39;
+}
+.topBox {
+    width: 100%;
+    height: 31px;
+}
+.topLeft {
+    width: 97px;
+    height: 31px;
+    float: left;
+    font-size: 13px;
+    line-height: 31px;
+    color: #ccc;
+    text-align: center;
+    position: relative;
+    .ewm {
+        width: 204px;
+        height: 204px;
+        background: #fff;
+        position: absolute;
+        padding: 4px;
+        top: 36px;
+        z-index: 999;
+        display: none;
+        .sanjiao {
+            position: absolute;
+            top: -15px;
+            font-size: 30px;
+            color: #fff;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+.topLeft img {
+    width: 12px;
+    height: 12px;
+}
+.topLeft:hover>img {
+    transform: rotate(180deg);
+}
+.topLeft:hover em {
+    display: inline-block;
+    transform: rotate(180deg)
+}
+.topLeft:hover .ewm {
+    display: block;
+}
+.topRight {
+    width: 834px;
+    height: 31px;
+    float: right;
+    #userMsg {
+        // display: inline-block;
+        width: 120px;
+        color: #000;
+        position: relative;
+        input {
+            position: absolute;
+            left: 65px;
+            height: 20px;
+            width: 50px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 6px;
+            margin-left: 6px;
+            background: #757575;
+            float: left;
+            color:#fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    }
+}
+.topRight li {
+    float: left;
+    font-size: 13px;
+    height: 31px;
+    line-height: 31px;
+    
+}
+.topRight li a {
+    float: left;
+    color: #ccc;
+    font-size: 13px;
+    padding: 0 20px;
+    text-align: center;
+}
+.topRight li em {
+    float: left;
+    color: #ccc;
+}
+.topRight li span {
+    color: #ccc;
+}
+.topRight li:nth-child(1) a {
+    padding: 0;
+    margin: 0 6px;
+    color: #FFF600;
+}
+/* 顶部图片 */
+.topImg img {
+    display: block;
+}
+/* 顶部搜索 */
+.topSer {
+    width: 100%;
+    height: 110px;
+}
+.topSer .serCont {
+    height: 100%;
+    height: 90px;
+    padding: 10px 0;
+}
+.serCont>a:nth-child(1) {
+    display: inline-block;
+    width: 199px;
+    height: 57px;
+    float: left;
+    margin: 26px 25px 0 0; 
+
+}
+.imgBox {
+    width: 175px;
+    height: 60px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.ser {
+    width: 450px;
+    height: 61px;
+    margin: 20px 0 0 80px;
+    float: left;
+    position: relative;
+}
+.serText {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.serText input {
+    width: 350px;
+    height: 39px;
+    line-height: 33px;
+    border: 3px solid #c40000;
+    font-size: 14px;
+    outline: none;
+    float: left;
+    padding: 0 8px;
+}
+.serText span {
+    float: left;
+    width: 86px;
+    height: 39px;
+    font-size: 16px;
+    background: #c40000;
+    color: #fff;
+    text-align: center;
+    line-height: 39px;
+}
+.hotSer a {
+    float: left;
+    display: block;
+    padding: 0 8px;
+    margin-top: 45px;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+    color: #E17F7F;
+}
+.shopCar {
+    position: relative;
+    width: 139px;
+    height: 34px;
+    font-size: 13px;
+    background: #f9f9f9;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    float: right;
+    margin: 24px 25px 0 0;
+    span {
+        a {
+            color: #000;
+            line-height:34px; 
+        }
+    }
+}
+.shopCar em {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin: 5px 0 0 5px;;
+    font-size: 20px;
+    color: #be4545;
+}
+.shopCar .itemRight {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ccc;
+}
+.shopCar .itemNum {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: #fff;
+    top: -20px;
+    left: 6px;
+    line-height: 29px;
+    font-weight: 900;
+    background-image: url(http://www.gjw.com/Content/head/img/qipao.png);
+    text-align: center;
+}
+
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 45px;
+}
+.navCont {
+    width: 1005px;
+    height: 45px;
+    float: left;
+}
+.navCont>ul>li {
+    float: left;
+    padding: 0 25px;
+    height: 45px;
+    line-height: 45px;
+}
+.navCont>ul li a {
+    color: #333;
+    font-size: 15px;
+}
+.navCont>ul>li:nth-child(1)>a {
+    color: #fff;
+    font-size: 18px;
+}
+.navCont>ul>li:nth-child(1) {
+    background: #CC0210;
+    width: 185px;
+}
+.navCont>ul>li>a:hover {
+    color: #E17F7F;
+}
+.navCont>ul>li:nth-child(1)>a:hover {
+    color: #fff;
+}
+.navCont>ul>li:nth-child(3) {
+    background: url(http://www.gjw.com/image/hoticon.gif);
+}
+
+.qingcang {
+    width: 190px;
+    height: 41px;
+    float: right;
+}
+.listNav {
+    position: relative;
+}
+.listNav>ul {
+    position: absolute;
+    width: 185px;
+    height: 470px;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+}
+.listNav>ul>li {
+    width: 185px;
+    height: 47px;
+    background: rgba(204,2,16,.9);
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+}
+.listNav>ul>li>a {
+    color: #fff;
+    width: 146px;
+    text-align: left;
+    display: inline-block;
+    height: 48px;
+    font-size: 16px;
+    text-align: left;
+}
+.listNav>ul>li>em {
+    position: absolute;
+    color: rgba(255, 255, 255, .3);
+    right: 20px;
+    top: -2px;
+    font-size: 24px;
+}
+.listNav>ul>li>a>img {
+    margin: 11px 5px 0 10px;
+    float: left;
+}
+.listNav>ul>li>div {
+    position: absolute;
+    left: 185px;
+    border-top: 1px solid #ccc;
+    width: 1020px;
+    height: 470px;
+    display: none;
+    
+}
+.listNav>ul>li:hover>div {
+    display: block;
+    
+}
+.list1 {
+    top: 0;
+    // display: block;
+    background: #fff;
+    .list1L {
+        width: 730px;
+        height: 425px;
+        padding-left: 10px;
+        float: left;
+        line-height: 45px;
+        font-size: 18px;
+        .long {
+            width: 80%;
+            margin: 15px 35px 0;
+            float: left;
+            height: 121px;
+            .list-msg {
+                padding-top: 20px;
+                
+                a {
+                    padding: 0 8px 0 3px;
+                    border-right: 1px solid #BFBFBF;
+                    font-size: 14px;
+                }
+                a:nth-child(1) {
+                    padding-left: 0;
+                }
+                
+            }
+        }
+        .list-tit {
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            border-bottom: 1px solid #EAEAEA;
+            float: left;
+            color: #3B3B3B;
+            font-weight: 900; 
+        }
+
+        
+
+        .short {
+            width: 39%;
+            height: 121px;
+            float: left;
+            margin: 15px 35px 0;
+            .list-msg {
+                padding-top: 20px;
+                
+                a {
+                    padding: 0 8px 0 3px;
+                    border-right: 1px solid #ccc;
+                    font-size: 14px;
+                }
+                a:nth-child(1) {
+                    padding-left: 0;
+                }
+                
+            }
+        }
+    }
+    .list1R {
+        width: 280px;
+        height: 470px;
+        background: #F6F6F6;
+        padding: 19px 17px;
+        box-sizing: border-box;
+        float: left;
+        line-height: 45px;
+        font-size: 18px;
+
+        .item-box {
+            display: table-cell;
+            border: 1px solid #EAEAEA;
+            width: 242px;
+            a {
+                float: left;
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.list2 {
+    top: -47px;
+    // background: #1E9ED7;
+}
+.list3 {
+    top: -94px;
+}
+.list4 {
+    top: -141px;
+}
+.list5 {
+    top: -188px;
+} 
+.list6 {
+    top: -235px;
+}
+.list7 {
+    top: -282px;
+}
+.list8 {
+    top: -329px;
+}
+/* 轮播图 */
+.banner {
+    width: 100%;
+    height: 470px;
+}
+.lunbotu {
+    width: 100%;
+    height: 470px;
+    position: relative;
+}
+.lunbotu .chatu {
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: 410px;
+    z-index: 1;
+}
+.lunbotu .chatu img {
+    display: block;
+    margin: 20px 0 15px 0;
+    opacity: .8;
+}
+.cont {
+    width: 1200px;
+    height: 470px;
+    position: relative;
+}
+.cont img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.cont img:nth-child(1) {
+    display: block;
+}
+.ctrl .left,.ctrl .right {
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    top: 211.5px;
+    font-size: 30px;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+.ctrl .left {
+    left: 185px;
+    cursor: pointer;
+}
+.ctrl .right {
+    right: 190px;
+    cursor: pointer;
+}
+.ctrl .left:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .5)
+}
+.ctrl .right:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+}
+.lunbotu .list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    
+}
+.list li {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: #fff;
+    cursor: pointer;
+    
+}
+.list li.active {
+    background: red;
+}
+
+/* nav-note */
+.nav-note {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+.noteC {
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+    clear: both;
+}
+.noteC span {
+    display: inline-block;
+    height: 45px;
+    padding: 0 45px;
+    line-height: 45px;
+    color: #9B9B9B;
+    font-size: 14px;
+    position: relative;
+}
+.noteC span img {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+
+}
+
+.noteC a {
+    color: #E01F35;
+    font-size: 13px;
+    padding: 0 10px;
+    line-height: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+}
+.noteC a img {
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 12px;
+}
+/* 侧边栏 */
+.fixSild {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 608px;
+    background: #ccc;
+}
+
+/* 商品栏 */
+.content {
+    width: 100%;
+    height: 691px;
+    padding-bottom: 20px;
+    background: url(http://static.gjw.com/public/img/bj.jpg?id=006) no-repeat center;
+    clear: both;
+}
+
+.contShop {
+    width: 1200px;
+    height: 666px;
+    background: #fff;
+}
+.contShop ul {
+    width: 1200px;
+    height: 322px;
+}
+.contShop ul:last-child {
+    margin-top: 22px;
+}
+.contShop ul:first-child li {
+    float: left;
+    height: 320px;
+    margin: 10px 18px 6px 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.contShop ul:first-child li:nth-child(1) {
+    width: 580px;
+}
+.contShop ul:first-child li:nth-child(2) {
+    width: 282px;
+}
+.contShop ul:first-child li:nth-child(3) {
+    width: 260px;   
+}
+.contShop ul:first-child li:nth-child(4) {
+    width: 280px;
+}
+.contShop ul:first-child li:nth-child(5) {
+    width: 280px;
+}
+.contShop ul:first-child li:nth-child(6) {
+    width: 264px;
+}
+.contShop ul:first-child li:nth-child(7) {
+    width: 280px;
+}
+.contShop ul li a {
+    color:#000;
+}
+.contShop ul li img {
+    display: block;
+    height: 260px;
+}
+.contShop ul li p {
+    height: 58px;
+    line-height: 28px;
+}
+.contShop ul li span {
+    float: left;
+    margin-left: 16px;
+    line-height: 58px;
+    height: 58px;
+}
+.contShop ul li em {
+    float: right;
+    height: 58px;
+    margin-right: 16px;
+    line-height: 58px;
+    color: #A10000;  
+}
+.contShop ul li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-5px,0);
+        transition: all 0.2s linear;
+}
+
+/* 茅台超值区 */
+.maotai,.nflj,.bjzk {
+    width: 100%;
+    height: 670px;
+    background: #f5f5f5;
+}
+.lineM,.lineLj,.lineZk {
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 58px;
+    color: #333;
+    clear: both;
+}
+.lineM span,.lineLj span,.lineZk span {
+    float: left;
+    font-size: 20px;
+}
+.lineM a,.lineLj a,.lineZk a {
+    float: right;
+    color: #333;
+}
+.lineM a em,.lineLj a em,.lineZk a em {
+    /* display: inline-block; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0 3px;
+    background: #B0B0B0;
+    font-weight: 900;
+    color: #fff;
+}
+.Mbox,.Ljbox,.Zkbox {
+    clear: both;
+}
+.Mleft,.Ljleft,.Zkleft {
+    width: 240px;
+    height: 612px;
+    float: left;
+}
+.Mleft a img:nth-child(1),.Ljleft a img:nth-child(1),.Zkleft a img:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.Mright,.Ljright,.Zkright {
+    width: 944px;
+    height: 612px;
+    float: left;
+}
+.Mright ul,.Ljright ul,.Zkright ul {
+    width: 944px;
+    height: 612px;
+}
+
+.Mleft a:nth-child(1),.Ljleft a:nth-child(1),.Zkleft a:nth-child(1) {
+    margin-bottom: 12px;
+}
+.Mright li,.Ljright li,.Zkright li {
+    width: 219px;
+    height: 300px;
+    float: left;
+    background: #fff;
+    display: flex;
+    margin: 0 8px 15px 8px;
+}
+.Mright li a,.Ljright li a,.Zkright li a {
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+}
+.Mright li img,.Ljright li img,.Zkright li img {
+    width: 190px;
+    height: 190px;
+    /* margin-top: -22px; */
+    margin: 10px 0;
+    
+}
+
+.Mright li a em,.Ljright li a em,.Zkright li a em {
+    background: #FF2D32;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+.Ljright li a em {
+    background-color: #FF5C00;
+}
+.Zkright li a em {
+    background-color: #FF3264;
+}
+.Mright li a p,.Ljright li a p,.Zkright li a p {
+    margin-bottom: 10px;
+}
+.Mright li a b,.Ljright li a b,.Zkright li a b {
+    color: #FF2C00;
+}
+
+@import 'listStyle.scss';
+
+.ptj,.maotai,.nflj,.bjzk{
+    @include listBox();
+}
+.yjrm {
+    width: 100%;
+    height: 370px;
+    background: #f5f5f5;
+    padding-top: 25px;
+}
+
+.linePtj,.lineM, .lineLj, .lineZk,.lineYjrm {
+    @include listLine();
+}
+
+.linePtj span,.lineM span,.lineLj span,.lineZk span,.lineYjrm span {
+    @include lineSpan();
+}
+
+.linePtj a,.lineM a,.lineLj a,.lineZk a,.lineYjrm a {
+    @include lineA();
+}
+
+.linePtj a em,.lineM a em, .lineLj a em, .lineZk a em,.lineYjrm a em {
+    @include lineEm();
+}
+
+.Ptjbox,.Mbox,.Ljbox,.Zkbox,.Yjrmbox {
+    @include Box();
+}
+
+.Ptjleft,.Mleft,.Ljleft,.Zkleft {
+    @include boxLeft();
+}
+.Yjrmleft {
+    width: 240px;
+    height: 300px;
+    float: left;
+}
+
+.Yjrmleft a img {
+    width: 240px;
+    height: 300px;
+    display: block;
+}
+
+.Yjrmright {
+    width: 944px;
+    height: 300ox;
+    float: left;
+}
+
+.Yjrmright ul {
+    width: 944px;
+    height: 300px;
+}
+
+.Ptjleft a img:nth-child(1),.Mleft a img:nth-child(1), .Ljleft a img:nth-child(1), .Zkleft a img:nth-child(1) {
+    @include boxImg();
+}
+
+.Ptjright,.Mright,.Ljright,.Zkright {
+    @include boxRight();
+}
+
+.Ptjright ul,.Mright ul, .Ljright ul, .Zkright ul {
+    @include Rul();
+}
+
+.Ptjright a:nth-child(1),.Mleft a:nth-child(1), .Ljleft a:nth-child(1), .Zkleft a:nth-child(1) {
+    @include A();
+}
+
+.Ptjright li,.Mright li, .Ljright li, .Zkright li,.Yjrmright li {
+    @include list();
+}
+
+.Ptjright li a,.Mright li a, .Ljright li a, .Zkright li a,.Yjrmright li a {
+    @include listA();
+}
+
+.Ptjright li img,.Mright li img, .Ljright li img, .Zkright li img,.Yjrmright li img {
+    @include listImg();
+}
+
+.Ptjright li a em,.Mright li a em, .Ljright li a em, .Zkright li a em,.Yjrmright li a em {
+    @include listEm();
+}
+
+.Ptjright li a em {
+    background: #1E9ED7;
+}
+.Ljright li a em {
+    background-color: #FF5C00; }
+.Zkright li a em {
+    background-color: #FF3264; }
+.Yjrmright li a em {
+    background: #b922ff;
+}
+.Ptjright li a p,.Mright li a p, .Ljright li a p, .Zkright li a p.Yjrmright li a p {
+    @include listP();
+}
+
+.Ptjright li a b,.Mright li a b, .Ljright li a b, .Zkright li a b,.Yjrmright li a b {
+    @include listB();
+}
+
+.dztj {
+    width: 100%;
+    height: 373px;
+    background: #f5f5f5;
+    padding-top: 25px; 
+}
+.lineDztj {
+    @include listLine();
+    position: relative;
+}
+.lineDztj span {
+    @include lineSpan();
+}
+.lineDztj a {
+    @include lineA();
+}
+.lineDztj em {
+    @include lineEm();
+}
+.Dztjbox {
+    width: 1200px;
+    height: 315px;
+    position: relative;
+    overflow: hidden;
+}
+.Dztjbox ul {
+    width: 1200px;
+    height: 315px;
+    position: absolute;
+    top: 0;
+}
+.Dztjbox ul:nth-child(2) {
+    left: 1200px;
+}
+
+.Dztjbox ul li {
+    width: 225px;
+    height: 315px;
+    float: left;
+    margin-right: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    text-align: center;
+    // align-content: center;
+}
+.Dztjbox ul li img {
+    width: 200px;
+    height: 200px;
+    // display: block;
+}
+.Dztjbox ul li p {
+    width: 100%;
+    height: 36px;
+    padding: 10px 0 5px 0;
+    color: #333;
+    font-size: 13px;
+}
+.Dztjbox ul li span {
+    width: 225px;
+    height: 17px;
+    padding: 5px 0;
+    color: #FF2C00;
+    font-size: 13px;
+    display: block;
+    margin: 5px 0;
+}
+.Dztjbox ul li em {
+    width: 225px;
+    height: 17px;
+    padding: 5px 0;
+    font-size: 13px;
+    color:#757575;
+}
+
+.dztj {
+    .btn {
+        position: absolute;
+        top:50%;
+        margin-top: -10px;
+        right: 25px;;
+        div {
+            width: 34px;
+            height: 24px;
+            border: 1px solid #ccc;
+            float: left;
+            cursor:pointer;
+        }
+        div:nth-child(1) {
+            background: url("../data/images/left.png");
+            border-right: none;
+        }
+        div:nth-child(2) {
+            background: url("../data/images/right.png")
+        }
+    }
+}
+
+.pl {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background: #f5f5f5;
+    .linePl {
+        @include listLine();
+        span {
+            @include lineSpan();
+        }
+    }
+    .Plbox {
+        width: 100%;
+        height: 392px;
+        clear: both;
+        ul {
+            width: 100%;
+            height: 392px;
+            li {
+                float: left;
+                width: 282px;
+                height: 392px;
+                margin-right: 18px;
+                background: #fff;
+                a {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                img {
+                    width: 282px;
+                    height: 204px;
+                }
+                div {
+                    width: 228px;
+                    height: 95px;
+                    color: #333;
+                    font-size: 13px;
+                    line-height: 23px;
+                    margin-top: 22px;
+                }
+                span {
+                    width: 228px;
+                    height: 33px;
+                    padding: 5px 0;
+                    display: block;
+                    color: #B0B0B0;
+                    font-size: 12px;
+                    line-height: 23px;
+                }
+                p {
+                    width: 100%;
+                    height: 18px;
+                    // text-align: center;
+                    padding: 0 22px;
+                }
+                em {
+                    // display: inline-block;
+                    padding-right: 15px;
+                    width: 140px;
+                    border-right: 2px solid #a2a2a2;
+                    height: 18px;
+                    line-height: 18px;
+                    color: #333;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+                b {
+                    padding-left: 10px;
+                    color:
+                    #FF6700;
+                    width: 50px;
+                    height: 18px;
+                    line-height: 17px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+.Mright li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+.Ljright li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+.Zkright li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+.Ptjright li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+.Yjrmright li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+.Plbox li:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        transform: translate3d(0,-2px,0);
+        transition: all 0.2s linear;
+}
+
+
+//视频区
+.mv {
+    width: 100%;
+    height: 341px;
+    padding-top: 25px;
+    background: #f5f5f5;
+    .lineMv {
+        width: 100%;
+        height: 58px;
+        line-height: 58px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .listbox {
+        width: 1200px;
+        height: 258px;
+        li {
+            list-style: none;
+            width: 282px;
+            height: 258px;
+            cursor: pointer;
+            text-align: center;
+            margin-right: 18px;
+            float: left;
+            position: relative;
+            background: #fff;
+            a {
+                color: #333;
+                img {
+                    width: 100%;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 21px;
+                    padding: 20px 0 5px 0;
+                }
+                div {
+                    position: absolute;
+                    width: 31px;
+                    height: 20px;
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+                    top: 139px;
+                    left: 19px;
+                    color: #fff;
+                    // text-align: center;
+                    text-indent: .2em;
+                    font-size: 15px;
+                }
+            }
+            a:hover div {
+                background: #FF7B21;
+                border: 2px solid #FF7B21;
+            }
+        }
+        li:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+            transform: translate3d(0,-2px,0);
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+// 底部链接
+.link {
+    width: 100%;
+    height: 343px;
+    background: url("http://www.gjw.com/Content/head/img/footer_Bg.gif");
+    .link_t {
+        width: 1150px;
+        height: 163px;
+        margin: 0 auto;
+        border-bottom: 2px solid #787878;
+        font-size: 13px;
+        padding-top: 7px;
+
+        .link_l {
+            width: 301px;
+            height: 75px;
+            background: url("http://www.gjw.com/Content/head/img/tel.png") left top no-repeat;
+            float: left;
+            margin-top: 60px;
+        }
+
+        a {
+            width: 176px;
+            height: 32px;
+            // margin:
+            display: block;
+            float: left;
+            margin: 100px 0 0 30px;
+        }
+
+        div.link_r {
+            width: 387px;
+            height: 160px;
+            float: right;
+            color: #fff;
+            p {
+                width: 194px;
+                height: 130px;
+                box-sizing: border-box;
+                padding-top: 30px;
+                float: left;
+                // clear: both;
+                text-align: right;
+            }
+            div {
+                width: 193px;
+                height: 154px;
+                text-align: center;
+                float: left;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 10px;
+                } 
+            }
+        }
+    }
+    .link_b {
+        width: 1150px;
+        margin: 0 auto;
+        color: #a9a9a9;
+        font-size: 13px;
+        line-height: 24px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+        dl {
+            float: left;
+            width: 170px;
+            dt {
+                color: #fff;
+                font-weight: 900;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            dd {
+                cursor: pointer;
+            }
+            dd:hover {
+                color: #c40000;
+            }
+        }
+        .firstDl {
+            margin-left: 100px;
+        }
+        .lastDl {
+            .dt,dd {
+                color: rgb(255,255,0)
+            }
+            dd:hover {
+                color: rgb(255,255,0)
+            }
+        }
+    }
+}
+
+//footer
+.footer {
+    width: 100%;
+    height: 204px;
+    // padding-top: 83px;
+    // box-sizing: border-box;
+    font-size: 13px;
+    .footbox {
+        width: 100%;
+        height: 204px;
+        background: url(http://static.gjw.com/product/20161021/img/baozheng_06.jpg) center top no-repeat;
+        padding-top: 80px;
+    }
+    .temp {
+        width: 100%;
+        height: 32px;
+        text-align: center;
+        color: #080808;
+        line-height: 32px;
+        font-size: 13px;
+        text-indent: 2em;
+        position: relative;
+        overflow: hidden;
+        ul {
+            width: 100%;
+            height: 160px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        span {
+            margin: 0 10px;
+        }
+        li:hover {
+            color: rgba(204,2,16,.6)
+        }
+    }
+    p {
+        text-align: center;
+        width: 100%;
+        height: 24px;
+    }
+    .bottom {
+        width: 100%;
+        height: 55px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+#search {
+    cursor: pointer;
+}
+
+.Totop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}

@@ -1,0 +1,116 @@
+#tiaozhuan {
+    display: inline-block;
+    margin: 0;
+    float: left;
+    margin-left: 5px;
+    margin-right: 30px;
+    color: #325e8f;
+}
+.registerCont {
+    width: 100%;
+    height: 602px;
+    background: url(http://order.gjw.com/Order/v1/css/login/images/login_bg.gif);
+    padding-top: 24px;
+    box-sizing: border-box;
+    .register-box {
+        width: 968px;
+        height: 578px;
+        border: 6px solid rgba(199,199,199,.7);
+        background: #fff;
+        font-size: 12px;
+    }
+    .regForm {
+        position: relative;
+        float: left;
+        width: 600px;
+        height: 566px;
+        border-right: 1px solid #dcdcdc;
+        .list {
+            width: 515px;
+            height: 51px;
+            padding-bottom: 15px;
+            margin: 33px 42.5px 0 42.5px;
+            .phone {
+                width: 258px;
+                height: 23px;
+                text-align: center;
+                line-height: 23px;
+                font-size: 16px;
+                border-right: 1px solid #dcdcdc;
+            }
+        }
+        .jt {
+            width: 257px;
+            height: 7px;
+            background: url(http://order.gjw.com/Order/v1/css/login/images/loginIcon.gif) no-repeat left -37px;
+            margin-left: 40px;
+            margin-bottom: 34px;
+        }
+        .zhuCe {
+            width: 500px;
+            height: 353px;
+            margin: 0 50px;
+            div {
+                width: 500px;
+                height: 52px;
+                line-height: 52px;
+                font-size: 16px;
+                position: relative;
+                label {
+                    float: left;
+                    text-align: right;
+                    width: 70px;
+                }
+                input {
+                    width: 240px;
+                    height: 35px;
+                    border: 1px solid #dcdcdc;
+                    line-height: 24px;
+                    padding-bottom: 3px;
+                    text-indent: 20px;
+                    margin-left: 5px;
+                    float: left;
+                    margin-top: 10px;
+                }
+                span {
+                    display: inline-block;
+                    color: red;
+                    font-size: 12px;
+                    width: 150px;
+                    height: 35px;
+                    line-height: 35px;
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            }
+            p {
+                color: #000;
+                margin: 15px 0;
+            }
+            #submit {
+                width: 348px;
+                height: 42px;
+                border: 1px solid #a8221f;
+                background: #fa413f;
+                color: #fff;
+                border-radius: 2px;
+                text-align: center;
+                line-height: 42px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+    .regimg {
+        width: 300px;
+        height: 356px;
+        padding: 83px 0 0 35px;
+        box-sizing: border-box;
+        float: left;
+        img {
+            width: 300px;
+            height: 356px;
+        }
+    }
+}

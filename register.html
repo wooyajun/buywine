@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./outside/css/reset.css">
+    <link rel="stylesheet" href="./outside/icomoon/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+            <div class="mid">
+                <div class="login-header">
+                    <a href="./index.html">
+                        <img src="http://www.gjw.com/Images/logo1.jpg" alt="">
+                    </a>
+                    <div class="header-right">
+                        <span>如您已有账号</span>
+                        <a href="./login.html" id="tiaozhuan">请登录</a>
+                        <em><i class="icon-cog"></i>帮助</em>
+                        <b><i class="icon-user"></i>在线客服</b>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 注册区 -->
+    <div class="registerCont">
+        <div class="mid">
+            <div class="register-box">
+                <div class="regForm">
+                    <div class="list">
+                        <div class="phone">
+                            <i class="icon-phone"></i>
+                            用户注册
+                        </div>
+                    </div>
+                    <div class="jt"></div>
+                    <div class="zhuCe">
+                        <form action="">
+                            <div class="num">
+                                <label for="">用户名:</label>
+                                <input type="text" id="user">
+                                <span></span>
+                            </div>
+                            <div class="nima">
+                                <label for="">设置密码:</label>
+                                <input type="text" id="password">
+                                <span></span>
+                            </div>
+                            <div class="sureWord">
+                                <label for="">确认密码:</label>
+                                <input type="text" id="sure">
+                                <span></span>
+                            </div>
+                            <p>点击注册，表示您同意购酒网《服务协议》</p>
+                            <input type="button" value="注 册" id="submit" >
+                        </form>
+                    </div>
+                </div>
+                <div class="regimg">
+                    <img src="http://img0.gjw.com/Famous/2019/0926/c108f882098e410ea415f946efbdfe7a.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+            <div class="container">
+                <div class="footbox">
+                    <div class="temp">
+                        <!-- <ul class="moveUl">
+                            <li>酒水知识<span>|</span>购酒论坛<span>|</span>茅台<span>|</span>中国酒偷网<span>|</span>9快9包邮<span>|</span>酒水加盟<span>|</span>品牌加盟网<span>|</span>建材加盟网<span>|</span>烧酒网<span>|</span>商机网<span>|</span>广州房产信息网<span>|</span>代理ip<span>|</span>名鞋库<span>|</span>隐形眼镜<span>|</span>美酒网<span>|</span>创业<span>|</span>订单农业<span>|</span>聊城赶集网<span>|</span>中国酒业新闻网<span>|</span>购酒网app<span>|</span>普洱茶<span>|</span>买酒网<span>|</span>白酒招商<span>|</span>酒代理<span>|</span>更多<span>|</span></li>
+                        </ul> -->
+                    </div>
+                    <p>
+                        Copyright® 2009-2019 gjw.com, All Rights Reserved 	购酒网(上海)供应链管理有限公司   版权所有
+                    </p>
+                    <div class="bottom">
+                        <a href=""><img src="./data/images/aut_06.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
+<script src="./outside/js/jquery.validate.js"></script>
+<script src="./outside/js/jquery.validate.messages_zh.js"></script>
+<script src="./outside/js/cookie.js"></script>
+<script>
+    ;(function ($) {
+        'use strict';
+        function Check () {
+            this.name = document.getElementById('user');
+            this.pass = document.getElementById('password');
+            this.sure = document.getElementById('sure');
+            this.submit = document.getElementById('submit');
+            this.addEvent();
+        }
+        Check.prototype.addEvent = function () {
+            this.submit.addEventListener('click',() => {
+                this.reg1 = /^[a-z0-9_-]{3,16}$/;
+                this.t1 = this.reg1.test(this.name.value);
+
+                this.reg2 = /^[a-z0-9_-]{6,18}$/;
+                this.t2 = this.reg2.test(this.pass.value);
+
+                if(this.pass.value === this.sure.value){
+                    this.t3 = true;
+                }else {
+                    this.t3 = false;
+                }
+                console.log(this.t1);
+                console.log(this.t2);
+                console.log(this.t3);
+                if(this.t1 && this.t2 && this.t3){
+                    setCookie('username',this.name.value,{
+                        expires:7
+                    });
+                    setCookie('password',this.pass.value,{
+                        expires:7
+                    });
+                    alert('恭喜您登录注册成功，可以去登录啦');
+                    open('./login.html')
+                }else {
+                    if(!this.t1){
+                        this.name.nextElementSibling.innerHTML = "请输入3-16位字符";
+                    }
+                    if(!this.t2){
+                        this.pass.nextElementSibling.innerHTML = "请输入6-18位的字符";
+                    }
+                    if(!this.t3){
+                        this.sure.nextElementSibling.innerHTML = "确认密码不一致";
+                    }
+                }
+            })
+        }
+        new Check();
+    })(jQuery);
+</script>
+</html>
